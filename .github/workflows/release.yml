@@ -46,7 +46,7 @@ jobs:
         with:
           files: apps/desktop/release/*.msi
         env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.TOKEN }}
 
       - name: Upload artifact
         if: github.event_name == 'workflow_dispatch'
